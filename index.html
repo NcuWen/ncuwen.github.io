@@ -98,19 +98,25 @@
 <li><strong>Absolute Path</strong>（绝对路径）：<em>带域名的文件的完整路径</em></li>
 </ul>
 <h3 id="详解"><a href="#详解" class="headerlink" title="详解"></a>详解</h3><p>#####相对路径</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">源文件和引用文件在同一个目录里————直接写引用文件名即可</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>源文件和引用文件在同一个目录里————直接写引用文件名即可</strong> </li>
+</ul>
 <p>Web是基于网络的服务，讨论相对路径的时候应该放在网络上（即服务器）讨论，但在本文中，为了说明问题，以本地电脑上的路径进行举例。事实上，在本地上编写Web程序时，在讨论相对路径时，完全可以以本地文件夹做参考，只需在将本地文件夹上传服务器时，不改变文件夹相对位置时即可。</p>
 <p>eg：</p>
 <p><img src="resource/article2/imgs/relative_same_folder.png" alt="relative_same_folde"></p>
 <p>要在index.html中引用quote.html，则路径为：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"quote.html"</span>&gt;</span>click<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">表示上级目录————../表示源文件所在目录的上一级目录</span><br></pre></td></tr></table></figure>
+<ul>
+<li>表示上级目录————../表示源文件所在目录的上一级目录</li>
+</ul>
 <p>eg:</p>
 <p><img src="resource/article2/imgs/relative_pre_folder.png" alt="relative_pre_floder"></p>
 <p>要在quote.html中引用index.html，则路径为：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"../index.html"</span>&gt;</span>click<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>表示源文件所在目录的上上级目录，则用../../，以此类推。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">表示下级目录————直接写下级目录文件的路径</span><br></pre></td></tr></table></figure>
+<ul>
+<li>表示下级目录————直接写下级目录文件的路径</li>
+</ul>
 <p>eg：</p>
 <p><img src="E:\CODE\Blog\blog\source\_posts\resource\article2\imgs\relative_pre_folder.png" alt="relative_pre_floder"></p>
 <p>要在index.html中引用quote.html，则路径为：</p>
@@ -122,15 +128,15 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://img.jpg"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>若在www目录下存在一个文件夹，比如imgs目录，img.jpg在imgs下，则访问该图片的路径为：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://imgs/img.jpg"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>eg：一个从网络上使用资源的实例：</p>
+<p><strong>eg：一个从网络上使用资源的实例：</strong></p>
 <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1521545395983&amp;di=dd9f717490e3e70f449bf2488e5bef8b&amp;imgtype=0&amp;src=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Farchive%2F9d5abb6cff1c0b9fd313976c8f3efddf4f150d51.jpg" alt=""></p>
-<p>温馨提示：在使用网络资源时，一定要找到资源的源地址，若为图片，则路径的最后一定是该图片资源。获取该图片的路径方法时：右键点击该图片，选择复制图片地址。</p>
+<p><strong>【温馨提示】</strong>：在使用网络资源时，一定要找到资源的源地址，若为图片，则路径的最后一定是该图片资源。获取该图片的路径方法时：右键点击该图片，选择复制图片地址。</p>
 <hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/20/WebResourcePath/" data-id="cjezfjfr10000rww52q9cyog3" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/20/WebResourcePath/" data-id="cjezfss0z0000wsw5amxittsl" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/路径，资源，笔记，相对路径，绝对路径/">路径，资源，笔记，相对路径，绝对路径</a></li></ul>
@@ -186,7 +192,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/20/Perface/" data-id="cjezfjfra0001rww5lqjn7gs2" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/20/Perface/" data-id="cjezfss180001wsw5m3ek8egs" class="article-share-link">Teilen</a>
       
       
     </footer>
