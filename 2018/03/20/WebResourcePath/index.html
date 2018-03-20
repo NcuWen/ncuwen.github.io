@@ -8,7 +8,7 @@
   <title>Web资源路径详解 | NcuWen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="##HTML路径： 在html中，想要引用一个文件，需要使用正确的文件路径。顾名思义，就是该文件所在的位置。通过正确的路径，我们可以获得该文件，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。注：这里说的文件，包括图像文件，影视文件，文本文件等。 分类 Relative Path（相对路径）：同一个目录的文件引用 Absolute Path（绝对路径）：带域名的">
-<meta name="keywords" content="路径，资源，笔记，相对路径，绝对路径">
+<meta name="keywords" content="path , Relative Path ,Absolute Path">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web资源路径详解">
 <meta property="og:url" content="http://yoursite.com/2018/03/20/WebResourcePath/index.html">
@@ -16,10 +16,10 @@
 <meta property="og:description" content="##HTML路径： 在html中，想要引用一个文件，需要使用正确的文件路径。顾名思义，就是该文件所在的位置。通过正确的路径，我们可以获得该文件，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。注：这里说的文件，包括图像文件，影视文件，文本文件等。 分类 Relative Path（相对路径）：同一个目录的文件引用 Absolute Path（绝对路径）：带域名的">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/20/WebResourcePath/resource/article2/imgs/relative_same_folder.png">
-<meta property="og:image" content="http://yoursite.com/2018/03/20/WebResourcePath/resource/article2/imgs/relative_pre_folder.png">
-<meta property="og:image" content="http://yoursite.com/2018/03/20/WebResourcePath/resource/article2/imgs/relative_pre_folder.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/20/resource/article2/imgs/relative_pre_folder.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/20/resource/article2/imgs/relative_pre_folder.png">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521545395983&di=dd9f717490e3e70f449bf2488e5bef8b&imgtype=0&src=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Farchive%2F9d5abb6cff1c0b9fd313976c8f3efddf4f150d51.jpg">
-<meta property="og:updated_time" content="2018-03-20T09:20:45.833Z">
+<meta property="og:updated_time" content="2018-03-20T09:27:36.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web资源路径详解">
 <meta name="twitter:description" content="##HTML路径： 在html中，想要引用一个文件，需要使用正确的文件路径。顾名思义，就是该文件所在的位置。通过正确的路径，我们可以获得该文件，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。注：这里说的文件，包括图像文件，影视文件，文本文件等。 分类 Relative Path（相对路径）：同一个目录的文件引用 Absolute Path（绝对路径）：带域名的">
@@ -115,7 +115,7 @@
 <li><strong>表示上级目录————../表示源文件所在目录的上一级目录</strong></li>
 </ul>
 <p>eg:</p>
-<p><img src="resource/article2/imgs/relative_pre_folder.png" alt="relative_pre_floder"></p>
+<p><img src="../resource/article2/imgs/relative_pre_folder.png" alt="relative_pre_floder"></p>
 <p>要在quote.html中引用index.html，则路径为：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"../index.html"</span>&gt;</span>click<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>表示源文件所在目录的上上级目录，则用../../，以此类推。</p>
@@ -123,7 +123,7 @@
 <li><strong>表示下级目录————直接写下级目录文件的路径</strong></li>
 </ul>
 <p>eg：</p>
-<p><img src="resource\article2\imgs\relative_pre_folder.png" alt="relative_pre_floder"></p>
+<p><img src="../resource/article2/imgs/relative_pre_folder.png" alt="relative_pre_floder"></p>
 <p>要在index.html中引用quote.html，则路径为：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"../quote.html"</span>&gt;</span>click<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <hr>
@@ -141,10 +141,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/20/WebResourcePath/" data-id="cjezg8gtj0000hsw59ba5awg8" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/20/WebResourcePath/" data-id="cjezghgxh0000p4w54lr7su87" class="article-share-link">Teilen</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/路径，资源，笔记，相对路径，绝对路径/">路径，资源，笔记，相对路径，绝对路径</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/path-Relative-Path-Absolute-Path/">path , Relative Path ,Absolute Path</a></li></ul>
 
     </footer>
   </div>
@@ -181,7 +181,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/路径，资源，笔记，相对路径，绝对路径/">路径，资源，笔记，相对路径，绝对路径</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/path-Relative-Path-Absolute-Path/">path , Relative Path ,Absolute Path</a></li></ul>
     </div>
   </div>
 
@@ -191,7 +191,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/路径，资源，笔记，相对路径，绝对路径/" style="font-size: 10px;">路径，资源，笔记，相对路径，绝对路径</a>
+      <a href="/tags/path-Relative-Path-Absolute-Path/" style="font-size: 10px;">path , Relative Path ,Absolute Path</a>
     </div>
   </div>
 
