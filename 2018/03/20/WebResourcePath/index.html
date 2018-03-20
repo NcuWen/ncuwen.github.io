@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Web资源路径详解 | NcuWen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="##HTML路径： 在html中，想要引用一个文件，需要使用正确的文件路径。顾名思义，就是该文件所在的位置。通过正确的路径，我们可以获得该文件，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。注：这里说的文件，包括图像文件，影视文件，文本文件等。 分类 Relative Path（相对路径）：同一个目录的文件引用 Absolute Path（绝对路径）：带域名的">
+<meta name="keywords" content="路径，资源，笔记，相对路径，绝对路径">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web资源路径详解">
+<meta property="og:url" content="http://yoursite.com/2018/03/20/WebResourcePath/index.html">
+<meta property="og:site_name" content="NcuWen">
+<meta property="og:description" content="##HTML路径： 在html中，想要引用一个文件，需要使用正确的文件路径。顾名思义，就是该文件所在的位置。通过正确的路径，我们可以获得该文件，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。注：这里说的文件，包括图像文件，影视文件，文本文件等。 分类 Relative Path（相对路径）：同一个目录的文件引用 Absolute Path（绝对路径）：带域名的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/03/20/WebResourcePath/resource/article2/imgs/relative_same_folder.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/20/WebResourcePath/resource/article2/imgs/relative_pre_folder.png">
+<meta property="og:image" content="e:/CODE/Blog/blog/source/_posts/resource/article2/imgs/relative_pre_folder.png">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521545395983&di=dd9f717490e3e70f449bf2488e5bef8b&imgtype=0&src=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Farchive%2F9d5abb6cff1c0b9fd313976c8f3efddf4f150d51.jpg">
+<meta property="og:updated_time" content="2018-03-20T08:56:25.826Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Web资源路径详解">
+<meta name="twitter:description" content="##HTML路径： 在html中，想要引用一个文件，需要使用正确的文件路径。顾名思义，就是该文件所在的位置。通过正确的路径，我们可以获得该文件，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。注：这里说的文件，包括图像文件，影视文件，文本文件等。 分类 Relative Path（相对路径）：同一个目录的文件引用 Absolute Path（绝对路径）：带域名的">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/20/WebResourcePath/resource/article2/imgs/relative_same_folder.png">
+  
+    <link rel="alternate" href="/atom.xml" title="NcuWen" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">NcuWen</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-WebResourcePath" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/20/WebResourcePath/" class="article-date">
+  <time datetime="2018-03-20T08:53:45.529Z" itemprop="datePublished">2018-03-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/note/">note</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Web资源路径详解
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##HTML路径：</p>
+<p>在html中，想要引用一个文件，需要使用正确的文件路径。顾名思义，就是该文件所在的位置。通过正确的路径，我们可以获得该文件，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。注：这里说的文件，包括图像文件，影视文件，文本文件等。</p>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ul>
+<li><strong>Relative Path</strong>（相对路径）：<em>同一个目录的文件引用</em></li>
+<li><strong>Absolute Path</strong>（绝对路径）：<em>带域名的文件的完整路径</em></li>
+</ul>
+<h3 id="详解"><a href="#详解" class="headerlink" title="详解"></a>详解</h3><p>#####相对路径</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">源文件和引用文件在同一个目录里————直接写引用文件名即可</span><br></pre></td></tr></table></figure>
+<p>Web是基于网络的服务，讨论相对路径的时候应该放在网络上（即服务器）讨论，但在本文中，为了说明问题，以本地电脑上的路径进行举例。事实上，在本地上编写Web程序时，在讨论相对路径时，完全可以以本地文件夹做参考，只需在将本地文件夹上传服务器时，不改变文件夹相对位置时即可。</p>
+<p>eg：</p>
+<p><img src="resource/article2/imgs/relative_same_folder.png" alt="relative_same_folde"></p>
+<p>要在index.html中引用quote.html，则路径为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"quote.html"</span>&gt;</span>click<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">表示上级目录————../表示源文件所在目录的上一级目录</span><br></pre></td></tr></table></figure>
+<p>eg:</p>
+<p><img src="resource/article2/imgs/relative_pre_folder.png" alt="relative_pre_floder"></p>
+<p>要在quote.html中引用index.html，则路径为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"../index.html"</span>&gt;</span>click<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>表示源文件所在目录的上上级目录，则用../../，以此类推。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">表示下级目录————直接写下级目录文件的路径</span><br></pre></td></tr></table></figure>
+<p>eg：</p>
+<p><img src="E:\CODE\Blog\blog\source\_posts\resource\article2\imgs\relative_pre_folder.png" alt="relative_pre_floder"></p>
+<p>要在index.html中引用quote.html，则路径为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"../quote.html"</span>&gt;</span>click<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h5 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h5><p><strong>【注】：</strong>这里所说的绝对路径，并非是以电脑本地为根目录的绝对路径。而是虚拟主机提供的目录。</p>
+<p>假设你注册了域名www ncuwen.cn(此为博主域名，有兴趣欢迎<a href="http://www.ncuwen.cn" target="_blank" rel="noopener">访问</a>），并申请了<a href="https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA" target="_blank" rel="noopener">虚拟主机</a>，你的虚拟主机提供商会给你一个目录，比如www，这个www目录就是你网站的根目录。</p>
+<p>如果你在www目录下放了一张图片，名称为：img.jpg，则访问该图片的路径为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://img.jpg"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>若在www目录下存在一个文件夹，比如imgs目录，img.jpg在imgs下，则访问该图片的路径为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://imgs/img.jpg"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>eg：一个从网络上使用资源的实例：</p>
+<p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1521545395983&amp;di=dd9f717490e3e70f449bf2488e5bef8b&amp;imgtype=0&amp;src=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Farchive%2F9d5abb6cff1c0b9fd313976c8f3efddf4f150d51.jpg" alt=""></p>
+<p>温馨提示：在使用网络资源时，一定要找到资源的源地址，若为图片，则路径的最后一定是该图片资源。获取该图片的路径方法时：右键点击该图片，选择复制图片地址。</p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/20/WebResourcePath/" data-id="cjezfjfr10000rww52q9cyog3" class="article-share-link">Teilen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/路径，资源，笔记，相对路径，绝对路径/">路径，资源，笔记，相对路径，绝对路径</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/03/20/Perface/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Perface</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Kategorien</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/note/">note</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/路径，资源，笔记，相对路径，绝对路径/">路径，资源，笔记，相对路径，绝对路径</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/路径，资源，笔记，相对路径，绝对路径/" style="font-size: 10px;">路径，资源，笔记，相对路径，绝对路径</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/20/WebResourcePath/">Web资源路径详解</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/20/Perface/">Perface</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 丁家文<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
