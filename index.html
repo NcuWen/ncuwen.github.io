@@ -1,6 +1,61 @@
 <html>
-  <head>NcuWen_Home</head>
-  <body>
-    hello world
-  </body>
+	<head>
+		<title>NcuWen_Home</title>
+		<meta charset="utf-8">
+		<meta name="HomePage" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  		<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+		<style>
+		/* Make the image fully responsive */
+			.carousel-inner img {
+				width: 75%; 
+				margin-left: auto; 
+				margin-right: auto;
+				height: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			<!-- 指示符 -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			<!-- 轮播图片 -->
+		<div class="carousel-inner" style="text-align: center;">
+			<div class="carousel-item active">
+				<img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg">
+				<div class="carousel-caption">
+        			<h3>Go My blog</h3>
+        			<p>Click this picture to get into my blog</p>
+      			</div>
+			</div>
+			<div class="carousel-item">
+				<img src="imgs/poem.jpg">
+				<div class="carousel-caption">
+        			<h3>Poem and Dream</h3>
+        			<p>Life is more than the trivials，it still deserves your poem and dream</p>
+      			</div>
+			</div>
+			<div class="carousel-item">
+				<img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
+				<div class="carousel-caption">
+        			<h3>Poem and Dream</h3>
+        			<p>Life is more than the trivials，it still deserves your poem and dream</p>
+      			</div>
+			</div>
+		</div>
+		<!-- 左右切换按钮 -->
+		<a class="carousel-control-prev" href="#demo" data-slide="prev" style="margin-left: 10%">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#demo" data-slide="next" style="margin-right: 10%">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+</body>
 </html>
