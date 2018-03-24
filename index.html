@@ -30,25 +30,31 @@
 			<!-- 轮播图片 -->
 		<div class="carousel-inner" style="text-align: center;">
 			<div class="carousel-item active">
-				<img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg">
-				<div class="carousel-caption">
-        			<h3>Go My blog</h3>
-        			<p>Click this picture to get into my blog</p>
-      			</div>
+				<a href="http://ncuwen.github.io/blog/">
+					<img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
+					<div class="carousel-caption">
+        				<h3>My blog</h3>
+        				<p>Click this picture to get into my blog</p>
+      				</div>
+      			</a>
 			</div>
 			<div class="carousel-item">
-				<img src="imgs/poem.jpg">
-				<div class="carousel-caption">
-        			<h3>Poem and Dream</h3>
-        			<p>Life is more than the trivials，it still deserves your poem and dream</p>
-      			</div>
+				<a href="http://ncuwen.github.io/governbook/">
+					<img src="imgs/books.jpg">
+					<div class="carousel-caption">
+        				<h3>GB GovernBook</h3>
+        				<p>This is a book management platform</p>
+      				</div>
+      			</a>
 			</div>
 			<div class="carousel-item">
-				<img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
-				<div class="carousel-caption">
-        			<h3>Poem and Dream</h3>
-        			<p>Life is more than the trivials，it still deserves your poem and dream</p>
-      			</div>
+				<a href="http://ncuwen.cn">
+					<img src="imgs/poem.jpg">
+					<div class="carousel-caption">
+        				<h3>Poem and Dream</h3>
+        				<p>Life is more than the trivials，it still deserves your poem and dream</p>
+      				</div>
+      			</a>
 			</div>
 		</div>
 		<!-- 左右切换按钮 -->
@@ -60,17 +66,14 @@
 		</a>
 	</div>
 	<div class="connetDiv" id="connets" style="width: 50%" style="text-align: right;">
-			<a href="http://ncuwen.github.io/blog/">
-				<canvas onclick="clickCon(this)" class="canvas" onmouseover="cycle(this,1)" 
-				onmouseout="MouseOut(this)" id="myCanvas"  width="110" height="110" ></canvas>
-			</a>
-			<a href="http://ncuwen.github.io/governbook/">
-				<canvas onclick="clickCon(this)" class="canvas" id="myCanvas2"  onmouseover="cycle(this,2)"
-				style="margin-left: 22%" width="110" height="110"></canvas>
-			</a>
-			<a href="http://ncuwen.cn">
-				<canvas onclick="clickCon(this)" class="canvas" id="myCanvas3" onmouseover="cycle(this,3)" style="float: right;" width="110" height="110"></canvas>
-			</a>
+		<canvas onclick="clickCon(this)" class="canvas" onmouseover="cycle(this,1)" 
+			onmouseout="MouseOut(this)" id="myCanvas"  width="110" height="110" ></canvas>
+			
+		<canvas onclick="clickCon(this)" class="canvas" id="myCanvas2"  onmouseover="cycle(this,2)"
+			style="margin-left: 22%" width="110" height="110"></canvas>
+			
+		<canvas onclick="clickCon(this)" class="canvas" id="myCanvas3" onmouseover="cycle(this,3)" 
+			style="float: right;" width="110" height="110"></canvas>
 	</div>
 	<script src="js/cycle.js"></script>
 	<script src="js/connect.js"></script>
