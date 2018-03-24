@@ -4,9 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="HomePage" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
   		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   		<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
   		<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  		
 		<style>
 		/* Make the image fully responsive */
 			.carousel-inner img {
@@ -57,5 +59,20 @@
 			<span class="carousel-control-next-icon"></span>
 		</a>
 	</div>
+	<div class="connetDiv" id="connets" style="width: 50%" style="text-align: right;">
+			<a href="http://ncuwen.github.io/blog/">
+				<canvas onclick="clickCon(this)" class="canvas" onmouseover="cycle(this,1)" 
+				onmouseout="MouseOut(this)" id="myCanvas"  width="110" height="110" ></canvas>
+			</a>
+			<a href="http://ncuwen.github.io/governbook/">
+				<canvas onclick="clickCon(this)" class="canvas" id="myCanvas2"  onmouseover="cycle(this,2)"
+				style="margin-left: 22%" width="110" height="110"></canvas>
+			</a>
+			<a href="http://ncuwen.cn">
+				<canvas onclick="clickCon(this)" class="canvas" id="myCanvas3" onmouseover="cycle(this,3)" style="float: right;" width="110" height="110"></canvas>
+			</a>
+	</div>
+	<script src="js/cycle.js"></script>
+	<script src="js/connect.js"></script>
 </body>
 </html>
