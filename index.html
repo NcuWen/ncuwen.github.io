@@ -12,14 +12,24 @@
 		<style>
 		/* Make the image fully responsive */
 			.carousel-inner img {
-				width: 75%; 
+				width: 100%; 
 				margin-left: auto; 
 				margin-right: auto;
-				height: 50%;
+				height: 100%;
 			}
 		</style>
 	</head>
 	<body>
+		<div class="connetDiv" id="connets" style="position: fixed; width: 50%; top: 50%; z-index:999" style="text-align: right;">
+			<canvas onclick="clickCon(this)" class="canvas" onmouseover="cycle(this,1)" 
+				onmouseout="MouseOut(this)" id="myCanvas"  width="110" height="110" ></canvas>
+			
+			<canvas onclick="clickCon(this)" class="canvas" id="myCanvas2"  onmouseover="cycle(this,2)"
+				style="margin-left: 22%" width="110" height="110"></canvas>
+			
+			<canvas onclick="clickCon(this)" class="canvas" id="myCanvas3" onmouseover="cycle(this,3)" 
+				style="float: right;" width="110" height="110"></canvas>
+		</div>
 		<div id="demo" class="carousel slide" data-ride="carousel">
 			<!-- 指示符 -->
 			<ul class="carousel-indicators">
@@ -58,22 +68,12 @@
 			</div>
 		</div>
 		<!-- 左右切换按钮 -->
-		<a class="carousel-control-prev" href="#demo" data-slide="prev" style="margin-left: 10%">
+		<a class="carousel-control-prev" href="#demo" data-slide="prev">
 			<span class="carousel-control-prev-icon"></span>
 		</a>
-		<a class="carousel-control-next" href="#demo" data-slide="next" style="margin-right: 10%">
+		<a class="carousel-control-next" href="#demo" data-slide="next">
 			<span class="carousel-control-next-icon"></span>
 		</a>
-	</div>
-	<div class="connetDiv" id="connets" style="width: 50%" style="text-align: right;">
-		<canvas onclick="clickCon(this)" class="canvas" onmouseover="cycle(this,1)" 
-			onmouseout="MouseOut(this)" id="myCanvas"  width="110" height="110" ></canvas>
-			
-		<canvas onclick="clickCon(this)" class="canvas" id="myCanvas2"  onmouseover="cycle(this,2)"
-			style="margin-left: 22%" width="110" height="110"></canvas>
-			
-		<canvas onclick="clickCon(this)" class="canvas" id="myCanvas3" onmouseover="cycle(this,3)" 
-			style="float: right;" width="110" height="110"></canvas>
 	</div>
 	<script src="js/cycle.js"></script>
 	<script src="js/connect.js"></script>
