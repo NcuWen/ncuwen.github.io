@@ -21,7 +21,7 @@
 			if(obj.id=="myCanvas"){
 				window.location.href = "http://ncuwen.github.io/blog/";
 			}else if(obj.id=="myCanvas2"){
-				window.location.href = "http://ncuwen.github.io/governbook/";
+				window.location.href = "http://ncuwen.github.io/GovernBook/";
 			}else{
 				window.location.href = "http://ncuwen.cn";
 			}
